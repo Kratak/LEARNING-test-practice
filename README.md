@@ -1,6 +1,11 @@
 ## Work log
 
-#### 29.11.2018 13:35 - 15:00
+#### 30.11.2018 18:00 - 00:00 "version": "0.1.1",
+
+First test fianly we go to
+"test": "react-scripts test",
+
+#### 29.11.2018 13:35 - 15:00 "version": "0.1.0",
 
 npm install
 jest
