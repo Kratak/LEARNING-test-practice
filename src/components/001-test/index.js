@@ -1,5 +1,5 @@
-export const add = (x , y) => x+y
+import {add} from './add'
 
 export  const total = (post, cost) => {
-    return(`${post + cost}zł`)
+    return(`${add(post, cost)}zł`)
 }

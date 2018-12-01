@@ -1,5 +1,16 @@
 ## Work log
 
+#### 30.11.2018 18:00 - 00:00 "version": "0.1.3",
+
+testing
+mocikng functions
+
+separete test to ech functionality
+add.js
+add.test.js
+index.js
+indext.test.js
+
 #### 30.11.2018 18:00 - 00:00 "version": "0.1.1",
 
 First test fianly we go to

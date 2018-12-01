@@ -1,24 +1,17 @@
-import {add, total} from './index'
+import {total} from './index'
+import {add} from './add'
 
-const trip = jest.fn(()=>5)
+jest.mock('./add', ()=>({
+    add: jest.fn(()=>25)
+}) )
 
-test('mock test', ()=>{
-    expect(trip(0,5,5,5,9)).toBe(5)
-    expect(trip).toHaveBeenCalledTimes(1)
-    expect(trip).toHaveBeenCalledWith(0,5,5,5,9)
-})
-
-test('testinf off add', ()=>{
-    const tvit = add(2,3)
-    expect(tvit).toBe(5)
-})
-
-
-test('second testinf off add', ()=>{
-    const tvit = add(-5,3)
-    expect(tvit).toBeLessThan(0)
-})
 
 test('integration add & total', ()=>{
     expect(total(5,20)).toBe("25zł")
+    expect(add).toHaveBeenCalledTimes(1)
+
+    add.mockImplementation(()=>30)
+    
+    expect(total(5,25)).toBe("30zł")
+    expect(add).toHaveBeenCalledTimes(2)
 })
