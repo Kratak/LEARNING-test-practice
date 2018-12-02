@@ -1,6 +1,31 @@
 ## Work log
 
-#### 30.11.2018 18:00 - 00:00 "version": "0.1.3",
+#### 01.12.2018 10:00 - 15:00 "version": "0.1.3",
+
+    const wrapper = render(<Counter />)
+    const btnTag = wrapper.getByText('0').tagName
+    wrapper.debug()
+    expect(btnTag).toBe('BUTTON')
+
+  i don't know why, terminal in vscode don't show last 4 lines on test asertion properly, to show then i need to add blank 4-line console.log(`
+  
+  
+  
+  `)
+
+
+  destructuring
+  
+  before
+  const wrapper = render(<Counter />)
+  const btnTag = wrapper.getByText('0').tagName
+
+  after
+  const {debug , getByTestId, getByText} = render(<Counter />)
+  const btnTag = getByText('0').tagName
+    
+
+#### 01.12.2018 18:00 - 00:00 "version": "0.1.3",
 
 testing
 mocikng functions
@@ -10,6 +35,15 @@ add.js
 add.test.js
 index.js
 indext.test.js
+
+
+swap to react-testing-libarry
+npm install --save-dev react-testing-library
+vsCode emmet snippets
+
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+}
 
 #### 30.11.2018 18:00 - 00:00 "version": "0.1.1",
 

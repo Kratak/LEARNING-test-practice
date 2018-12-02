@@ -1,6 +1,6 @@
 {
   "name": "testing-nov-2018",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.1.6",
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
+    "react-testing-library": "^5.3.1",
     "styled-components": "^4.1.2"
   }
 }
