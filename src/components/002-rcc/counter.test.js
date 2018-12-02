@@ -1,24 +1,29 @@
 import React from 'react'
-import {render, cleanup} from 'react-testing-library'
+import {render, cleanup, fireEvent} from 'react-testing-library'
 import Counter from './counter'
+
+afterEach(cleanup)
 
 test('<Counter />', ()=>{
     //destructuring
     const {debug , getByTestId, getByText} = render(<Counter />)
     //debug and previue of html  and tags
-    debug()
     //assert button ia a button
-    expect(getByText('0').tagName).toBe('BUTTON')
+    const buttonCounter =getByTestId('test002')
+    const styledTestDiv =getByTestId('test001')
+    expect(buttonCounter.tagName).toBe('BUTTON')
     // assert  div is a div
-    expect(getByTestId('test001').tagName).toBe('DIV')
+    expect(styledTestDiv.tagName).toBe('DIV')
     // assert div have a text "text"
-    expect(getByTestId('test001').textContent).toBe('text')
-
-
-
+    expect(styledTestDiv.textContent).toBe('text')
+    // assert count function on button
+    fireEvent.click(buttonCounter)
+    expect(buttonCounter.textContent).toBe('1')
+    fireEvent.click(buttonCounter)
+    expect(buttonCounter.textContent).toBe('2')
     //clearing 4-line consol log
-    console.log(` 
+    // console.log(` 
      
      
-      `)
+    //   `)
 })

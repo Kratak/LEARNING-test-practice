@@ -1,6 +1,6 @@
 {
   "name": "testing-nov-2018",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",

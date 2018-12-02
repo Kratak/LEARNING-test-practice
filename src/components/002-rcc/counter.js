@@ -21,13 +21,21 @@ export default class Counter extends Component {
     count: 0
   }
 
+  count = () =>{
+    this.setState((prevState)=>({
+count: prevState.count +1
+    }))
+  }
+
   render() {
     const {count} = this.state
     return (
-      <CounterWrapper>
-         <button>{count}</button> 
+      <>
+         <button data-testid ="test002" onClick={this.count}>
+         {count}
+         </button> 
          <div data-testid ="test001">text</div>
-      </CounterWrapper>
+      </>
     )
   }
 }

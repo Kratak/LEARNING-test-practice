@@ -1,6 +1,23 @@
 ## Work log
 
-#### 01.12.2018 10:00 - 15:00 "version": "0.1.3",
+#### 02.12.2018 14:20 - 23:00 "version": "0.1.5",
+
+afterEach(cleanup)
+
+    const buttonCounter =getByTestId('test002')
+    fireEvent.click(buttonCounter)
+    expect(buttonCounter.textContent).toBe('1')
+    fireEvent.click(buttonCounter)
+    expect(buttonCounter.textContent).toBe('2')
+
+
+more of test queryByTestId
+
+snapshopt
+
+
+
+#### 02.12.2018 10:00 - 14:00 "version": "0.1.4",
 
     const wrapper = render(<Counter />)
     const btnTag = wrapper.getByText('0').tagName
@@ -15,7 +32,7 @@
 
 
   destructuring
-  
+
   before
   const wrapper = render(<Counter />)
   const btnTag = wrapper.getByText('0').tagName
