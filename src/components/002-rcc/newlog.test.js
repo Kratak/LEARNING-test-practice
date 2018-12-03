@@ -6,15 +6,9 @@ afterEach(cleanup)
 
 test('NewLog testing',()=>{
     const {
-        debug , 
-        getByTestId, 
-        getByText, 
-        queryByTestId,
-        container} = 
-    render(<NewLog />)
-
+        debug, getByTestId, queryByTestId, container, getByText
+    } = render(<NewLog />)
     expect(getByTestId('page-title').textContent).toBe('New log')
     expect(queryByTestId('log-form')).toBeTruthy()
-    
     expect(container.firstChild).toMatchSnapshot()
 })

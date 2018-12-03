@@ -1,35 +1,30 @@
 {
   "name": "testing-nov-2018",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-overdrive": "0.0.10",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "@babel/preset-env": "7.1.6",
-    "parcel-bundler": "1.10.3",
+    "react-transition-group": "^2.4.0",
     "styled-components": "4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "react-testing-library": "^5.3.1"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/preset-env": "^7.1.6",
-    "jest": "^23.6.0",
-    "parcel-bundler": "^1.10.3",
-    "react-testing-library": "^5.3.1",
-    "styled-components": "^4.1.2"
-  }
+  ]
 }

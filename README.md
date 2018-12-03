@@ -1,6 +1,55 @@
+## Simple react-app to practice unit tests
+
+### Tech stack:
+ - reat-testing-library
+ - dom-testing-library
+ - jest
+
+ - react
+ - styled-componets
+
+I'm practicing with Scott Tolinski from [level up tutorials]
+Also great credits goes to stakoverflow community and official docs.
+
+
+
+[level up tutorials]: <http://leveluptutorials.com/>
+
+
 ## Work log
 
-#### 02.12.2018 14:20 - 23:00 "version": "0.1.5",
+
+
+#### 03.12.2018 09:44 - 12:00 "version": "0.1.6",
+
+Thoughts for today
+
+submitForm and submitFrom 
+
+IT IS NOT THE SAME !!!
+form and from..
+
+test passing, working version
+
+
+#### 02.12.2018 20:19 - 23:00 "version": "0.1.6",
+
+there was a problem at
+
+              console.error 
+node_modules/
+  jest-environment-jsdom/
+    node_modules/
+      jsdom/
+        lib/
+          jsdom/
+            virtual-console.js:
+        line  29
+
+  best option to solve this was, commet whole "if" after that line
+
+
+#### 02.12.2018 14:20 - 20:19 "version": "0.1.5",
 
 afterEach(cleanup)
 
@@ -13,7 +62,7 @@ afterEach(cleanup)
 
 more of test queryByTestId
 
-snapshopt
+snapshots
 
 
 
